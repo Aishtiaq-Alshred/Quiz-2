@@ -33,7 +33,7 @@ public class BookService {
     public boolean delete(String id){
         for(int i=0;i<array.size();i++){
             if(array.get(i).getID().equals(id)){
-                array.remove(id);
+                array.remove(i);
                 return true;
             }
         }
