@@ -79,6 +79,7 @@ public class BookController {
 
     }
 
+   @GetMapping(" numberpage/{number}")
     public ResponseEntity numberpage(@PathVariable int number){
 
         ArrayList<Book>a=service.page(number);
